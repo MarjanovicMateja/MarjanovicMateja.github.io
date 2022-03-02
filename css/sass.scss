@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto:wght@300&display=swap');
+$site-color:#353839;
+$site-color-dark:#2a2d2e;
+$site-color-light:#424647;
+$font-color: #3964C3;
+@mixin Flex($content, $align, $direction) {
+    display: flex;
+    justify-content: $content;
+    align-items: $align;
+    flex-direction: $direction;
+}
+@mixin Font($size,$weight,$style,$transform) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    text-transform: $transform;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+/*HEADER*/
+body{
+    background-color: $site-color;
+    height: 2000px;
+}
+header{
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    position: relative;
+    background-color: $site-color-dark;
+    .header-wrap{
+        @include Flex(space-between,center,row );
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .logo-menu{
+            ul{
+                list-style-type: none;
+                
+            }
+            li{
+                text-decoration: none;
+                
+            }
+            a{
+                text-decoration: none;
+                @include Font(30px,800,normal,uppercase);
+                color: #fff;
+                user-select: none;
+            }
+            span{
+                color: $font-color;
+            }
+        }
+        nav{
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+            ul{
+                list-style-type: none;
+                padding: 10px;
+            }
+            li{
+                text-decoration: none;
+            }
+            a{
+                text-decoration: none;
+                @include Font(20px,800,normal,uppercase);
+                color: #fff;
+                user-select: none;
+            }
+            a:hover{
+                color: $font-color;
+            }
+        }
+        
+    }
+}
+#bg-cover{
+    background-image: url(../assets/background.jpg);
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-bottom: 2px solid #fff;
+    @include Flex(center,center ,row );
+    h1{
+        @include Font(3rem,700,normal,none);
+        color: #fff;
+        position: relative;
+        user-select: none;
+    }
+    h2{
+        @include Font(2rem,700,normal,none);
+        color: #fff;
+        position: relative;
+        user-select: none;
+    }
+}
+#bg-cover::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+}
+#about{
+    @include Flex(space-evenly,center ,column );
+    width: 100%;
+    h2{
+            color: #fff;
+            @include Font(3rem,650 ,normal ,none );
+            border-bottom: 5px solid $font-color;
+            margin-top: 5vh;
+            width: 30%;
+            text-align: center;
+    }
+    h3{
+            color: #fff;
+            @include Font(1.5rem,650 ,normal ,none );
+            width: 60%;
+            margin-top: 5vh;
+            text-align: center;
+    }
+}
+#skills{
+    @include Flex(center,center ,row );
+    width:100%;
+    .box1{
+        margin-top: 5vh;
+        text-align: center;
+        width: 10%;
+        margin-bottom: 5vh;
+        i{
+            color:#fff;
+        }
+        .fa-flag:hover {
+            color: #FFA500;
+        }
+        .fa-flag-0:hover {
+            color: #FFFF00;
+        }
+        .fa-flag-1:hover {
+            color: #f0db4f;
+        }
+        .fa-flag-2:hover {
+            color: #563d7c;
+        }
+    }
+}
+#projects{
+    background-color: $site-color-dark;
+    width: 100%;
+    h2{
+        color: #fff;
+        @include Font(3rem,650 ,normal ,none );
+        border-bottom: 5px solid $font-color;
+        margin-top: 5vh;
+        width: 30%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /*#project-warp{
+
+    }*/
+}
