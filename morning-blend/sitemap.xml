@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9%22%3E">
+<url>
+    <loc>https://marjanovicmateja.github.io/morning-blend/</loc>
+    <lastmod>2022-6-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1</priority>
+</url>
+<url>
+    <loc>https://marjanovicmateja.github.io/morning-blend/menu.html/</loc>
+    <lastmod>2022-3-8</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+</url>
+<url>
+    <loc>https://marjanovicmateja.github.io/morning-blend/online-order.html/</loc>
+    <lastmod>2022-3-8</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>
+<url>
+    <loc>https://marjanovicmateja.github.io/morning-blend/gallery.html/</loc>
+    <lastmod>2022-3-8</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+</url>
+</urlset>
